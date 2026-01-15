@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Ensamblaje de PC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="microchip.png">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-microchip"></i>
+                <span>PC Educa</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="componentes.html" class="nav-link ">
+                        <i class="fas fa-cogs"></i>
+                        <span>Componentes</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="compatibilidad.html" class="nav-link">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <span>Compatibilidad</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                        <a href="ensamblaje.html" class="nav-link active">
+                            <i class="fas fa-tools"></i>
+                            <span>Ensamblaje</span>
+                        </a>
+                    </li>
+                <li class="nav-item">
+                    <a href="galeria.html" class="nav-link">
+                        <i class="fas fa-images"></i>
+                        <span>Galería</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="recursos.html" class="nav-link">
+                        <i class="fas fa-book-open"></i>
+                        <span>Recursos</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- Encabezado de página -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Guía de Ensamblaje de PC</h1>
+            <p>Aprende paso a paso cómo construir tu propia computadora</p>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Introducción -->
+            <section class="intro-section">
+                <div class="intro-card">
+                    <h2>¡Construye tu propia PC!</h2>
+                    <p>
+                        Ensamblar una computadora puede parecer intimidante al principio, pero con la guía adecuada y un poco de paciencia, 
+                        cualquier persona puede hacerlo. Este tutorial te llevará paso a paso a través del proceso de construcción de tu propia PC.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Herramientas necesarias -->
+            <section class="tools-section">
+                <h2 class="section-title">
+                    <i class="fas fa-toolbox"></i>
+                    Herramientas Necesarias
+                </h2>
+                <div class="tools-grid">
+                    <div class="tool-item">
+                        <i class="fas fa-screwdriver"></i>
+                        <h3>Destornillador Phillips</h3>
+                        <p>El único tool realmente necesario. Un destornillador magnético de tamaño mediano es ideal.</p>
+                    </div>
+                    <div class="tool-item">
+                        <i class="fas fa-hand-paper"></i>
+                        <h3>Muñequera antiestática</h3>
+                        <p>Opcional pero recomendada. Previene daños por descargas electrostáticas.</p>
+                    </div>
+                    <div class="tool-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Buena iluminación</h3>
+                        <p>Necesitarás ver claramente los conectores y tornillos pequeños.</p>
+                    </div>
+                    <div class="tool-item">
+                        <i class="fas fa-box"></i>
+                        <h3>Contenedor para tornillos</h3>
+                        <p>Un plato o tazón pequeño para no perder los tornillos.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pasos del ensamblaje -->
+            <section class="assembly-steps">
+                <h2 class="section-title">
+                    <i class="fas fa-list-ol"></i>
+                    Pasos del Ensamblaje
+                </h2>
+
+                <!-- Paso 1 -->
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Preparar el área de trabajo</h3>
+                        <div class="step-description">
+                            <p>Busca una superficie plana, limpia y con buena iluminación. Coloca una toalla o paño suave sobre la mesa para evitar rayar el gabinete. Asegúrate de tener suficiente espacio para organizar los componentes.</p>
+                            <div class="step-tips">
+                                <h4><i class="fas fa-lightbulb"></i> Consejos:</h4>
+                                <ul>
+                                    <li>Trabaja en un área sin alfombras para reducir la electricidad estática</li>
+                                    <li>Ten a mano todos los componentes y herramientas</li>
+                                    <li>Lava tus manos antes de comenzar</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Instalar el procesador (CPU) en la placa madre</h3>
+                        <div class="step-description">
+                            <p>Coloca la placa madre sobre su caja antiestática. Abre el socket levantando la palanca. Alinea el triángulo del CPU con el triángulo del socket y colócalo suavemente. No fuerces. Baja la palanca para fijar el CPU.</p>
+                            <div class="step-warnings">
+                                <h4><i class="fas fa-exclamation-triangle"></i> Importante:</h4>
+                                <ul>
+                                    <li>Nunca toques los pines del CPU</li>
+                                    <li>Alinea correctamente las marcas antes de colocar</li>
+                                    <li>El CPU debe caer suavemente por su propio peso</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Instalar la memoria RAM</h3>
+                        <div class="step-description">
+                            <p>Abre los clips de las ranuras DIMM. Alinea la muesca del módulo RAM con la de la ranura. Presiona firmemente hacia abajo hasta que los clips encajen. Si usas múltiples módulos, consulta el manual para la configuración correcta.</p>
+                            <div class="step-image">
+                                <img src="ram-install.png" alt="Instalación de RAM" style="max-width: 100%; border-radius: 8px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 4 -->
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Montar la placa madre en el gabinete</h3>
+                        <div class="step-description">
+                            <p>Instala los soportes (standoffs) en el gabinete según el factor de forma de tu placa madre. Coloca la I/O shield en el gabinete. Alinea la placa madre con los soportes y atornilla firmemente usando los tornillos apropiados.</p>
+                            <div class="step-tips">
+                                <h4><i class="fas fa-check-circle"></i> Verificación:</h4>
+                                <ul>
+                                    <li>Todos los soportes deben coincidir con los orificios de la placa</li>
+                                    <li>No aprietes demasiado los tornillos</li>
+                                    <li>Asegúrate de que la placa esté nivelada</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 5 -->
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Instalar la fuente de poder (PSU)</h3>
+                        <div class="step-description">
+                            <p>Coloca la PSU en su compartimento (generalmente arriba o abajo del gabinete). Alinea los tornillos y fíjala al gabinete. Asegúrate de que el ventilador tenga espacio para ventilar correctamente.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 6 -->
+                <div class="step-card">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Conectar los cables de alimentación</h3>
+                        <div class="step-description">
+                            <p>Conecta el cable de 24 pines a la placa madre. Conecta el cable de 4/8 pines de CPU cerca del socket. Conecta los cables SATA a las unidades de almacenamiento. Si tienes GPU dedicada, conecta los cables PCIe necesarios.</p>
+                            <div class="step-image">
+                                <img src="cables-psu.png" alt="Cables de PSU" style="max-width: 100%; border-radius: 8px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 7 -->
+                <div class="step-card">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h3>Instalar las unidades de almacenamiento</h3>
+                        <div class="step-description">
+                            <p>Monta los SSD/HDD en sus bahías correspondientes. Conecta los cables SATA de datos a la placa madre y a las unidades. Conecta los cables de alimentación SATA desde la PSU.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 8 -->
+                <div class="step-card">
+                    <div class="step-number">8</div>
+                    <div class="step-content">
+                        <h3>Instalar la tarjeta gráfica (GPU)</h3>
+                        <div class="step-description">
+                            <p>Retira las tapas de los slots PCIe que necesites. Alinea la GPU con el slot PCIe x16. Presiona firmemente hasta que encaje. Atornilla el soporte de la GPU al gabinete. Conecta los cables de alimentación PCIe si es necesario.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 9 -->
+                <div class="step-card">
+                    <div class="step-number">9</div>
+                    <div class="step-content">
+                        <h3>Conectar los cables frontales y ventiladores</h3>
+                        <div class="step-description">
+                            <p>Conecta los cables del panel frontal (power, reset, USB, audio) según el manual de la placa madre. Conecta los ventiladores del gabinete a los headers correspondientes en la placa madre.</p>
+                            <div class="step-warnings">
+                                <h4><i class="fas fa-info-circle"></i> Manual es clave:</h4>
+                                <p>Cada placa madre tiene una disposición ligeramente diferente. Consulta siempre el manual para la ubicación exacta de cada conector.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 10 -->
+                <div class="step-card">
+                    <div class="step-number">10</div>
+                    <div class="step-content">
+                        <h3>Verificación final y primer arranque</h3>
+                        <div class="step-description">
+                            <p>Revisa todas las conexiones. Asegúrate de que todos los componentes estén bien instalados. Conecta el monitor, teclado y mouse. Enciende la fuente de poder y presiona el botón de encendido. Si todo está correcto, deberías ver la pantalla de POST/BIOS.</p>
+                            <div class="step-tips">
+                                <h4><i class="fas fa-tools"></i> Si no arranca:</h4>
+                                <ul>
+                                    <li>Verifica que la PSU esté encendida</li>
+                                    <li>Revisa que todos los cables estén bien conectados</li>
+                                    <li>Comprueba que la RAM esté bien instalada</li>
+                                    <li>Revisa las conexiones del panel frontal</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Consejos finales -->
+            <section class="final-tips">
+                <h2 class="section-title">
+                    <i class="fas fa-star"></i>
+                    Consejos Finales
+                </h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Seguridad primero</h3>
+                        <p>Trabaja siempre con la PC desconectada de la corriente. La electricidad estática puede dañar los componentes.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Lee los manuales</h3>
+                        <p>Cada componente es diferente. Los manuales contienen información específica muy valiosa.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-camera"></i>
+                        <h3>Toma fotos</h3>
+                        <p>Fotografía cada paso para tener referencia en caso de dudas durante el proceso.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>No te apresures</h3>
+                        <p>El ensamblaje toma tiempo. Hazlo con calma y verifica cada paso antes de continuar.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Video explicativo -->
+            <section class="video-section">
+                <h2 class="section-title">
+                    <i class="fas fa-video"></i>
+                    Video Tutorial
+                </h2>
+               
+                    
+                <div class="video-container">
+                    <div class="video"style=" width: 700px; height: 500px; padding-top: 700px;
+                        padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                        border-radius: 8px; will-change: transform;">
+                        <iframe loading="lazy" style="position: absolute; width:100%; height:100%; top: 0; left: 0; border: none; padding: 50px;margin: 0;"
+                            src="https://www.canva.com/design/DAG-cNHn7Po/W4G_Z_riMDIdUeaYwlTXbw/watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                        </iframe>
+                    </div>
+                </div>
+                </section>
+    </main>
+
+    <!-- Footer -->
+ <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Pc Educa</h3>
+                        <p>Educación técnica en hardware de computadoras para estudiantes de bachillerato.<br> Nuestra misión es hacer que el aprendizaje de tecnología sea accesible, divertido y efectivo.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Enlaces Rápidos</h4>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="componentes.html">Componentes</a></li>
+                            <li><a href="compatibilidad.html">Compatibilidad</a></li>
+                            <li><a href="ensamblaje.html">Ensamblaje</a></li>
+                            <li><a href="galeria.html">Galería</a></li>
+                            <li><a href="recursos.html">Recursos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Recursos</h4>
+                        <ul>
+                            <li><a href="componentes.html#cpu">Guía de Procesadores</a></li>
+                            <li><a href="componentes.html#ram">Memoria RAM</a></li>
+                            <li><a href="compatibilidad.html">Verificar Compatibilidad</a></li>
+                            <li><a href="ensamblaje.html">Guía de Ensamblaje</a></li>
+                            <li><a href="recursos.html">Actividades Interactivas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contacto</h4>
+                        <p style="color: #b8c5d6; line-height: 1.8;">
+                            <i class="fas fa-user-graduate" style="color: #00d4ff; margin-right: 0.5rem;"></i> Estudiantes de Bachillerato<br>
+                            <i class="fas fa-map-marker-alt" style="color: #00d4ff; margin-right: 0.5rem;"></i> Guayaquil, Ecuador
+                        </p>
+                        <p style="color: #00d4ff; margin-top: 1rem; font-family: 'JetBrains Mono', monospace;">
+                            <i class="fas fa-graduation-cap"></i> Proyecto Educativo
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Pc Educa - Proyecto Educativo de Informática | Todos los derechos reservados</p>
+                </div>
+            </div>
+        </footer>
+    <script src="main.js"></script>
+</body>
+</html>

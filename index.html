@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="microchip.png">
+
+</head>
+<body onload="initializeWelcomeScreen()">
+
+    <!-- Pantalla de bienvenida inicial mejorada -->
+    <div id="welcome-screen">
+        <h1 id="welcome-title" data-text="Bienvenido">Bienvenido</h1>
+        <p id="welcome-message"></p>
+        <div class="typing-cursor"></div>
+    </div>
+
+    <!-- Contenido principal del sitio -->
+    <div id="main-content" class="main-content hidden">
+        <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-microchip"></i>
+                <span>PC Educa</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">
+                        <i class="fas fa-home"></i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="componentes.html" class="nav-link">
+                        <i class="fas fa-cogs"></i>
+                        <span>Componentes</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="compatibilidad.html" class="nav-link">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <span>Compatibilidad</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                        <a href="ensamblaje.html" class="nav-link">
+                            <i class="fas fa-tools"></i>
+                            <span>Ensamblaje</span>
+                        </a>
+                    </li>
+                <li class="nav-item">
+                    <a href="galeria.html" class="nav-link">
+                        <i class="fas fa-images"></i>
+                        <span>Galería</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="recursos.html" class="nav-link">
+                        <i class="fas fa-book-open"></i>
+                        <span>Recursos</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+        <!-- Banner animado -->
+        <section class="hero-banner">
+            <div class="banner-slider">
+                <div class="banner-slide active">
+                    <img src="banner1.png" alt="Componentes del PC">
+                    <div class="banner-content">
+                        <h2>Aprende sobre <span>Componentes de PC</span></h2>
+                        <p>Descubre el funcionamiento interno de tu computadora</p>
+                    </div>
+                </div>
+                <div class="banner-slide">
+                    <img src="banner2.png" alt="Hardware Educativo">
+                    <div class="banner-content">
+                        <h2>Hardware <span>Educativo</span></h2>
+                        <p>Conoce cada pieza que hace funcionar tu PC</p>
+                    </div>
+                </div>
+                <div class="banner-slide">
+                    <img src="banner3.png" alt="Tecnología Avanzada">
+                    <div class="banner-content">
+                        <h2>Tecnología <span>Avanzada</span></h2>
+                        <p>Explora los avances en componentes de computadora</p>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-controls">
+                <button class="banner-btn prev" onclick="changeSlide(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="banner-btn next" onclick="changeSlide(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="banner-indicators">
+                <span class="indicator active" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <!-- Contenido principal -->
+        <main class="main-section">
+            <div class="container">
+                <!-- Sección de introducción mejorada -->
+<!-- Sección de introducción mejorada con 3 divisiones -->
+<section class="intro-section">
+    <h1 class="section-title">
+        Bienvenido a tu sitio web de confianza
+    </h1>
+    
+    <!-- Primera división: Texto de introducción -->
+    <div class="intro-block">
+        <div class="intro-text-centered">
+            <p>En este sitio educativo aprenderás sobre los componentes internos de una computadora, su función y compatibilidad. Diseñado especialmente para estudiantes de Primero de Bachillerato técnico en Informática.</p>
+        </div>
+    </div>
+
+    <!-- Segunda división: Lista y Video -->
+    <div class="intro-block">
+        <div class="intro-content">
+            <div class="intro-text">
+                <h3>¿Qué aprenderás?</h3>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> Identificar los componentes principales de una PC</li>
+                    <li><i class="fas fa-check-circle"></i> Entender la función de cada pieza de hardware</li>
+                    <li><i class="fas fa-check-circle"></i> Comprender la compatibilidad entre componentes</li>
+                    <li><i class="fas fa-check-circle"></i> Realizar ensamblajes básicos de computadoras</li>
+                    <li><i class="fas fa-check-circle"></i> Diagnosticar problemas de hardware</li>
+                    <li><i class="fas fa-check-circle"></i> Optimizar el rendimiento de tu sistema</li>
+                </ul>
+            </div>
+            <div class="intro-video">
+                <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+                    border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                    src="https://www.canva.com/design/DAG-cTFxJKc/-UU9dEuBQU6Xgf2Yi_6nUA/watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tercera división: Por qué es importante -->
+    <div class="intro-block">
+        <div class="intro-text-centered">
+            <h3>¿Por qué es importante?</h3>
+            <p>En el mundo actual, donde la tecnología está en todas partes, entender cómo funcionan las computadoras es una habilidad fundamental. Ya sea que quieras trabajar en tecnología, gaming, diseño gráfico o simplemente entender mejor tus dispositivos, este conocimiento te será útil toda la vida.</p>
+        </div>
+    </div>
+</section>
+
+                <!-- Sección de características mejorada -->
+                <section class="features-section">
+                    <h2 class="section-title">Explora nuestras secciones</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h3>Componentes del PC</h3>
+                            <p>Aprende sobre CPU, RAM, GPU, Placa Madre, Almacenamiento y más componentes esenciales. Cada sección incluye imágenes detalladas, especificaciones técnicas y funciones principales.</p>
+                            <a href="componentes.html" class="feature-link">
+                                Explorar <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-puzzle-piece"></i>
+                            </div>
+                            <h3>Compatibilidad</h3>
+                            <p>Entiende cómo verificar que los componentes sean compatibles entre sí. Aprende sobre sockets, chipsets, factores de forma y más aspectos técnicos importantes.</p>
+                            <a href="compatibilidad.html" class="feature-link">
+                                Aprender <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-images"></i>
+                            </div>
+                            <h3>Galería Visual</h3>
+                            <p>Explora imágenes detalladas de cada componente y su instalación. Nuestra galería incluye fotos de alta calidad de CPUs, GPUs, placas madre y más.</p>
+                            <a href="galeria.html" class="feature-link">
+                                Ver Galería <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <h3>Recursos Interactivos</h3>
+                            <p>Accede a quizzes, juegos educativos y actividades de aprendizaje. Pon a prueba tu conocimiento con actividades diseñadas para hacer el aprendizaje más divertido.</p>
+                            <a href="recursos.html" class="feature-link">
+                                Comenzar <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Nueva sección: Estadísticas -->
+                <section class="stats-section" style="margin: 5rem 0;">
+                    <h2 class="section-title">
+                        <i class="fas fa-chart-line"></i>
+                        Estadísticas de aprendizaje
+                    </h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon" style="background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%); box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <h3>10+ Temas</h3>
+                            <p>Contenido completo sobre cada componente del PC.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon" style="background: linear-gradient(135deg, #8a2be2 0%, #6a1cb1 100%); box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);">
+                                <i class="fas fa-images"></i>
+                            </div>
+                            <h3>20+ Imágenes</h3>
+                            <p>Galería visual extensa con fotos de alta calidad de componentes reales.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon" style="background: linear-gradient(135deg, #ff6b35 0%, #e55a2b 100%); box-shadow: 0 0 20px rgba(255, 107, 53, 0.5);">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <h3>4+ Juegos</h3>
+                            <p>Actividades interactivas diseñadas para reforzar el aprendizaje de manera divertida y efectiva.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon" style="background: linear-gradient(135deg, #ffd700 0%, #ccac00 100%); box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Autoaprendizaje</h3>
+                            <p>Aprende a tu propio ritmo con contenido disponible 24/7, perfecto para revisar antes de exámenes.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Nueva sección: Guía rápida -->
+                <section class="quick-guide-section" style="margin: 5rem 0;">
+                    <h2 class="section-title">
+                        <i class="fas fa-rocket"></i>
+                        Guía rápida de componentes
+                    </h2>
+                    <div class="intro-content">
+                        <div class="intro-text">
+                            <h3>Los 8 componentes esenciales</h3>
+                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                                    <div class="component-quick-card" style="border-color: #00d4ff; color: #00d4ff;">
+                                        <h4 style="color: #00d4ff; margin-bottom: 0.5rem; font-family: 'Orbitron', monospace;"><i class="fas fa-microchip"></i> CPU</h4>
+                                        <p style="color: #b8c5d6; font-size: 0.9rem;">El cerebro de la computadora que ejecuta instrucciones.</p>
+                                    </div>
+                                    <div class="component-quick-card" style="border-color: #00ff88; color: #00ff88;">
+                                        <h4 style="color: #00ff88; margin-bottom: 0.5rem; font-family: 'Orbitron', monospace;"><i class="fas fa-memory"></i> RAM</h4>
+                                        <p style="color: #b8c5d6; font-size: 0.9rem;">Memoria temporal para datos que el CPU necesita rápidamente.</p>
+                                    </div>
+                                    <div class="component-quick-card" style="border-color: #8a2be2; color: #8a2be2;">
+                                        <h4 style="color: #8a2be2; margin-bottom: 0.5rem; font-family: 'Orbitron', monospace;"><i class="fas fa-circuit-board"></i> Placa Madre</h4>
+                                        <p style="color: #b8c5d6; font-size: 0.9rem;">Conecta todos los componentes y permite su comunicación.</p>
+                                    </div>
+                                    <div class="component-quick-card" style="border-color: #ff6b35; color: #ff6b35;">
+                                        <h4 style="color: #ff6b35; margin-bottom: 0.5rem; font-family: 'Orbitron', monospace;"><i class="fas fa-gamepad"></i> GPU</h4>
+                                        <p style="color: #b8c5d6; font-size: 0.9rem;">Procesa gráficos y es esencial para juegos y diseño.</p>
+                                    </div>
+                                    <div class="component-quick-card" style="border-color: #ffd700; color: #ffd700;">
+                                        <h4 style="color: #ffd700; margin-bottom: 0.5rem; font-family: 'Orbitron', monospace;"><i class="fas fa-hdd"></i> Almacenamiento</h4>
+                                        <p style="color: #b8c5d6; font-size: 0.9rem;">Guarda todos tus archivos, programas y el sistema operativo.</p>
+                                    </div>
+                                    <div class="component-quick-card" style="border-color: #ff1493; color: #ff1493;">
+                                        <h4 style="color: #ff1493; margin-bottom: 0.5rem; font-family: 'Orbitron', monospace;"><i class="fas fa-bolt"></i> Fuente de Poder</h4>
+                                        <p style="color: #b8c5d6; font-size: 0.9rem;">Proporciona energía eléctrica a todos los componentes.</p>
+                                    </div>
+                                    <div class="component-quick-card" style="border-color: #0088cc; color: #0088cc;">
+                                        <h4 style="color: #0088cc; margin-bottom: 0.5rem; font-family: 'Orbitron', monospace;"><i class="fas fa-snowflake"></i> Refrigeración</h4>
+                                        <p style="color: #b8c5d6; font-size: 0.9rem;">Mantiene los componentes a temperaturas seguras.</p>
+                                    </div>
+                                    <div class="component-quick-card" style="border-color: #dda0dd; color: #dda0dd;">
+                                        <h4 style="color: #dda0dd; margin-bottom: 0.5rem; font-family: 'Orbitron', monospace;"><i class="fas fa-desktop"></i> Gabinete</h4>
+                                        <p style="color: #b8c5d6; font-size: 0.9rem;">Protege los componentes y facilita el flujo de aire.</p>
+                                    </div>
+                               </div>
+                        </div>
+                        <div class="component-quick-card">
+                            <div style="background: rgba(0, 212, 255, 0.1); padding: 2rem; border-radius: 20px; border: 1px solid rgba(0, 212, 255, 0.3); text-align: center;">
+                                <h3 style="color: #00d4ff; margin-bottom: 1.5rem; font-family: 'Orbitron', monospace; text-transform: uppercase; letter-spacing: 0.1em;">
+                                    <i class="fas fa-lightbulb"></i> Tip de oro
+                                </h3>
+                                <p style="color: #b8c5d6; line-height: 1.8; margin-bottom: 1.5rem;">
+                                    "La compatibilidad es clave. Antes de comprar cualquier componente, verifica que sea compatible con tu configuración actual. Un error de compatibilidad puede costarte tiempo y dinero."
+                                </p>
+                                <div style="background: rgba(0, 0, 0, 0.3); padding: 1.5rem; border-radius: 12px; border-left: 4px solid #00d4ff;">
+                                    <p style="color: #00d4ff; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; margin: 0;">
+                                        <i class="fas fa-info-circle"></i> Usa nuestra sección de compatibilidad para verificar antes de comprar
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Pc Educa</h3>
+                        <p>Educación técnica en hardware de computadoras para estudiantes de bachillerato.<br> Nuestra misión es hacer que el aprendizaje de tecnología sea accesible, divertido y efectivo.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Enlaces Rápidos</h4>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="componentes.html">Componentes</a></li>
+                            <li><a href="compatibilidad.html">Compatibilidad</a></li>
+                            <li><a href="ensamblaje.html">Ensamblaje</a></li>
+                            <li><a href="galeria.html">Galería</a></li>
+                            <li><a href="recursos.html">Recursos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Recursos</h4>
+                        <ul>
+                            <li><a href="componentes.html#cpu">Guía de Procesadores</a></li>
+                            <li><a href="componentes.html#ram">Memoria RAM</a></li>
+                            <li><a href="compatibilidad.html">Verificar Compatibilidad</a></li>
+                            <li><a href="ensamblaje.html">Guía de Ensamblaje</a></li>
+                            <li><a href="recursos.html">Actividades Interactivas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contacto</h4>
+                        <p style="color: #b8c5d6; line-height: 1.8;">
+                            <i class="fas fa-user-graduate" style="color: #00d4ff; margin-right: 0.5rem;"></i> Estudiantes de Bachillerato<br>
+                            <i class="fas fa-map-marker-alt" style="color: #00d4ff; margin-right: 0.5rem;"></i> Guayaquil, Ecuador
+                        </p>
+                        <p style="color: #00d4ff; margin-top: 1rem; font-family: 'JetBrains Mono', monospace;">
+                            <i class="fas fa-graduation-cap"></i> Proyecto Educativo
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Pc Educa - Proyecto Educativo de Informática | Todos los derechos reservados</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
